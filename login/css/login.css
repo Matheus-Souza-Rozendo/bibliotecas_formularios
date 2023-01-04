@@ -1,0 +1,103 @@
+body{
+    background-image: url(https://img.freepik.com/fotos-premium/cartazes-e-placas-de-propaganda-brilhantes-na-cidade-com-reflexo-da-luz-na-rua-molhada_163855-226.jpg?w=2000);
+    background-size: cover;
+}
+
+.row{
+    min-height: 100vh !important;
+    align-items: center !important;
+}
+
+form{
+    min-height: 75vh;
+    background: -webkit-linear-gradient(top,#7579ff,#b224ef);
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+label {
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding: 5px;
+    color: white;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+.blur{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+}
+
+.erro{
+    color: yellow;
+}
+
+input{
+    background: none !important;
+    border: none !important;
+    border-bottom: 1.5px rgba(255, 255, 255, 0.25) solid !important;
+    line-height: 1.2;
+    color: white !important;
+    border-radius: 0px !important;
+    transition-property: border !important;
+    transition-duration: 1.5s !important;
+    transition-timing-function: linear;
+}
+
+input:focus{
+    box-shadow: none !important;
+    border-bottom: 1.5px rgba(255, 255, 255, 0.75) solid !important;
+}
+
+a{
+    color:rgba(255, 255, 255, 0.7) ;
+    text-decoration: none;
+    padding: 10px;
+}
+
+a:hover{
+    color: white;
+}
+
+.div-btn-submit{
+    display: flex;
+    justify-content: center;
+}
+
+button[type="submit"]{
+    background-color: white !important;
+    border-radius: 30px !important;
+    color: rgb(100,100,100);
+    border: none;
+    padding-inline: 50px;
+    transition-property:  all !important;
+    transition-duration: 0.75s !important;
+    transition-timing-function: ease;
+}
+
+button[type="submit"]:hover{
+    background:-webkit-linear-gradient(bottom,#7579ff,#b224ef);
+}
+
+@media screen and (min-width:700px) and (max-width:950px) and (orientation:portrait) {
+    form{
+        min-height: 50vh;
+    }
+}
+
+@media screen and (min-height:1100px){
+    form{
+       min-height: 800px;
+    }
+}
