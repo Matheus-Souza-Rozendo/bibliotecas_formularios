@@ -1,0 +1,76 @@
+.row{
+    min-height: 100vh !important;
+    align-items: center !important;
+}
+
+form{
+    min-height: 75vh;
+    background-color: white;
+    border-radius: 7px;
+    padding: 50px!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    -webkit-box-shadow: 2px 0px 2px 2px rgba(0,0,0,0.05); 
+    box-shadow: 2px 0px 2px 2px rgba(0,0,0,0.05);
+}
+
+
+label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 0.7rem;
+    padding: 5px;
+    line-height: 1.2;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+figure{
+    display: block;
+    text-align: center;
+}
+
+
+.div-flex{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#div-card{
+    width: 75%;
+}
+
+#div-cv{
+    width: 45%;
+}
+
+button{
+    width: 80% !important;
+    margin-top: 50px;
+}
+
+input{
+    line-height: 1.2;
+}
+
+img{
+    width: 35%;
+}
+
+@media screen and (min-width:700px) and (max-width:950px) and (orientation:portrait) {
+    form{
+        min-height: 50vh;
+    }
+}
+
+@media screen and (min-height:1100px){
+    form{
+       min-height: 800px;
+    }
+}
+
+.erro{
+    color: red;
+}
